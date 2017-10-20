@@ -39,19 +39,5 @@ public class SeleniumExamples {
 
     @Test
     public void buttonEnabledWhenInputHasText() {
-        driver.get("http://gitelm.surge.sh");
-
-        WebElement input = driver.findElement(By.className("input"));
-
-        WebElement searchBtn = driver.findElement(By.xpath("//button[text()='Search']"));
-
-        input.sendKeys("jouderianjr");
-
-        searchBtn.click();
-
-        List<WebElement> cards = driver.findElements(By.className("card"));
-
-
-        assertTrue(cards.size() > 0 );
     }
 }
